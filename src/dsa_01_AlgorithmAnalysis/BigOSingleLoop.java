@@ -51,6 +51,21 @@ public class BigOSingleLoop {
         System.out.println("Triple Nested Loop Number of operations : " + numberOfOperations + " in " + (endTime - startTime) + " miliseconds");
         // Task 3 End...................
 
+        // ......................................................................................................
+        // Task 4 N and M Nested Loops  O(n*m)...................
+        numberOfOperations = 0;
+
+        startTime = System.currentTimeMillis();
+        for (int j = 0; j < n; j++) {
+            for (int i = 0; i < m; i++) {
+                numberOfOperations += 1;
+            }
+        }
+        endTime = System.currentTimeMillis();
+
+        System.out.println("Nested Loop (n* m) Number of operations : " + numberOfOperations + " in " + (endTime - startTime) + " miliseconds");
+        // Task 4 End...................
+
 
     }
 
