@@ -81,6 +81,17 @@ public class BigOSingleLoop {
         System.out.println("Consecutive Loops O(n+m) Number of operations : " + numberOfOperations + " in " + (endTime - startTime) + " miliseconds");
         // Task 4.5 End...................
 
+        // Task 5 Logarithmic Complexity...................
+        numberOfOperations = 0;
+        startTime = System.currentTimeMillis();
+        for (int i = 1; i < n; i *= 2) {
+            numberOfOperations += 1;
+        }
+        endTime = System.currentTimeMillis();
+        System.out.println("Logarithmic Number of operations  : " + numberOfOperations + " in " + (endTime - startTime) + " milliseconds");
+
+        // Task 5 End...................*/
+
 
     }
 
