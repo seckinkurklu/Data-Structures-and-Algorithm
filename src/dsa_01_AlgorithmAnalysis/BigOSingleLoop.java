@@ -66,6 +66,21 @@ public class BigOSingleLoop {
         System.out.println("Nested Loop (n* m) Number of operations : " + numberOfOperations + " in " + (endTime - startTime) + " miliseconds");
         // Task 4 End...................
 
+        // Task 4.5 N and M Consecutive Loops O(n+m)...................
+        numberOfOperations = 0;
+
+        startTime = System.currentTimeMillis();
+        for (int j = 0; j < n; j++) {
+            numberOfOperations += 1;
+        }
+        for (int i = 0; i < m; i++) {
+            numberOfOperations += 1;
+        }
+        endTime = System.currentTimeMillis();
+
+        System.out.println("Consecutive Loops O(n+m) Number of operations : " + numberOfOperations + " in " + (endTime - startTime) + " miliseconds");
+        // Task 4.5 End...................
+
 
     }
 
